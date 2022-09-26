@@ -1,0 +1,23 @@
+Terminal App 
+	- macOS Monterey 12.5.1 Version
+	- Installation Path: /System/Applications/Utilities
+	
+Git Version Control
+	- Git Version 2.37.3
+	- /opt/homebrew/bin/git
+	  /usr/bin/git
+	
+NodeJS and NPM
+	- NodeJS Version 18.8.0; NPM Version 8.18.0
+	- /Users/mohamedismail/.nvm/versions/node/v18.8.0/bin/node
+	- /Users/mohamedismail/.nvm/versions/node/v18.8.0/bin/NPM
+
+Repository configurations
+	- None - didn't use a .gitignore or git config (not required by lab)
+	
+Text editor (CotEditor)
+	- Version 4.3.4
+	- Installation Path: /Applications
+	
+Text editor configurations
+	- None - default Text editor configurations
