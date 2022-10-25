@@ -1,17 +1,16 @@
 name: CISC 3140 Fall 2022 Lab 2
-on: 
+on:
   push:
-    branches: [lab2]   
-    paths: "lab2/* "
+    branches: [ "lab2" ]
+  pull_request:
+    branches: [ "lab2/* " ]
+
+  workflow_dispatch:
+
+
 jobs:
   BashScript:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - run: cd lab2/ && ./sample.sh
-  MakeJavaProg:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - run: cd lab2/ && make lab2
-    
+      - uses: actions/checkout@v3   
+      - run: cd lab2/ && ./sample.sh
