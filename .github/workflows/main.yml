@@ -3,16 +3,16 @@ on:
   push:
     branches: [lab2]
     paths: "lab2/* "
-  jobs:
-    01-BashScript: # the sample.sh runs BOTH the bashscript as well as creating the output text of the Java program.
-      runs-on: ubuntu-latest
+jobs:
+  01-BashScript: # the sample.sh runs BOTH the bashscript as well as creating the output text of the Java program.
+    runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
         - run: cd lab2/ 
         - run: ./sample.sh
         - run: ./output.txt
-    02-MakeJavaProg:
-      runs-on: ubuntu-latest
+  02-MakeJavaProg:
+    runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
         - run: cd lab2/ && make lab2
