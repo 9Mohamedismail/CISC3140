@@ -12,14 +12,13 @@ import java.time.format.DateTimeFormatter;
 public class labTwo {
   public static void main(String[] args) {
 
+Scanner input = new Scanner(System. in );
   boolean rerun = true;
   while(rerun) {
     LocalDate date = LocalDate.now();
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy"); // CISC 1115 student - Change this to yyyy/MM/dd if you want. It's up to you.
     String parsedDate = date.format(formatter);
     int secondChoice; int retry;
-
-    Scanner input = new Scanner(System. in );
 
     System.out.println("\nHello Student! Your current date is: " + parsedDate + ". Would you like to change this?");
     System.out.println("(1) - Leave current date");
@@ -135,6 +134,7 @@ public class labTwo {
       System.out.print("LAB FOUR: " + labFour);
       break;
     }
+    System.out.print("\n");
   }
 
   // This function calculates the quiz dates. It takes in the choice of the user (which lab they want to get) and the date (this could be the local or the changed one)
@@ -165,6 +165,7 @@ public class labTwo {
       System.out.print("QUIZ FIVE: " + quizFive);
       break;
     }
+    System.out.print("\n");
   }
 
 }
