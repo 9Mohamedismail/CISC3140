@@ -3,7 +3,7 @@ on:
   push:
     branches: [ "lab2" ]
   pull_request:
-    branches: [ "lab2/* " ]
+    branches: [ "lab2" ]
 jobs:
   BashScript:
     runs-on: ubuntu-latest
