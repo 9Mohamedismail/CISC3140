@@ -1,0 +1,11 @@
+name: CISC 3140 Fall 2022 Lab 2
+on:
+  push:
+    branches: [ "lab2" ]
+    paths: "lab2/* "
+jobs:
+  BashScript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3   
+      - run: cd lab2/ && ./sample.sh
