@@ -1,6 +1,8 @@
 # CISC3140 LAB 2
 **Hello. The following is how to run each file.**
 
+**Please notice that the .awk program does not have a way to run in this branch. Instead refer to the group github branch that has a make file that allows for all awk programs to run. Thank you!**
+
 # MAKEFILE
 **``To run the makefile use``** *`make lab2`*
 **``You wil be asked to input a javefile name. For this lab type "labTwo``**
